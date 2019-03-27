@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1553729580 source:c:\users\bob ghosh\documents\projects\trs\main.cpp
+	<iostream.h>
+	<fstream.h>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+
+1553730046 source:c:\users\bob ghosh\documents\projects\trs\list.cpp
+	<iostream.h>
+	<fstream.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
