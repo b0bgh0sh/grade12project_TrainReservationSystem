@@ -86,7 +86,7 @@ gets(psswrd);
 char ans[50]; int flag=0;
 
 fstream user;
-user.open("User.dat",ios_base::in);
+user.open("User.dat",ios::in|ios::binary|ios::out);
 while(!user.eof())
     {
         user.read((char*)&dat,sizeof(dat));
@@ -131,7 +131,7 @@ else if(flag==2){
 
 void counter(){
     clrscr();
-cout<<"\nWelcome To Our Counter Screen. \nSelect the appropriate choice: \n1.Book One Way Ticket \n2.Book Return Journey Ticket \n3.Help \n4.Logout \nChoice: ";
+cout<<"\nWelcome To Our Counter Screen. \nSelect the appropriate choice: \n1.Book One Way Ticket \n2.Book Return Journey Ticket \n3.Info \n4.Logout \nChoice: ";
 int ch; cin>>ch;
 switch(ch){
 case 1:
@@ -144,7 +144,7 @@ case 2:
     break;
 case 3:
     {ifstream lst;
-    lst.open("List.dat",ios_base::in);
+    lst.open("List.dat",ios::in|ios::binary|ios::beg);
     while(!lst.eof()){
 
         for(int i=0; i<12; i++){
